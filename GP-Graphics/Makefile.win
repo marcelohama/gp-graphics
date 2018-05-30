@@ -1,0 +1,32 @@
+# Project: GP-Graphics
+# Makefile created by Dev-C++ 4.9.8.1
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = GP-2005_private.res
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"F:/DevCPP/lib" -lalleg 
+INCS =  -I"F:/DevCPP/include" 
+CXXINCS =  -I"F:/DevCPP/include/c++"  -I"F:/DevCPP/include/c++/mingw32"  -I"F:/DevCPP/include/c++/backward"  -I"F:/DevCPP/include" 
+BIN  = GP-Graphics.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS)  -fmessage-length=0
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before GP-Graphics.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "GP-Graphics.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+GP-2005_private.res: GP-2005_private.rc 
+	$(WINDRES) -i GP-2005_private.rc -I rc -o GP-2005_private.res -O coff 

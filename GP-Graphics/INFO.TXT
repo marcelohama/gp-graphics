@@ -1,0 +1,17 @@
+Bugs conhecidos ate agora:
+   -> inserir virgula em zoom, grau ou coeficiente.
+   -> inserir valor nao inteiro em grau.
+   -> colocar um valor muito grande para o grau (na
+      verdade nao e bem um bug, mas voce vai ter que
+      ficar digitando pro resto da vida... =])
+
+Coisas que ficariam legais mas nao foram feitas:
+   -> Se o usuario pudesse digitar a equacao em forma
+      de expressao.
+   -> Se desse pra mudar o zoom durante a vizualizacao
+      do grafico.
+   -> Houvesse mais funcoes alem das polinomiais, por
+      exemplo seno, coseno, log, etc...
+   -> Tivesse uma interface melhor.
+   -> Fosse possivel analisar equacoes com tres
+      variaveis (X, Y e Z).

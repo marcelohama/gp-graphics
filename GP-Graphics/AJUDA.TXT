@@ -1,0 +1,38 @@
+GP-2005 Graficos Polinomiais
+
+#Objetivo
+   Ajudar pessoas com deficiencias didaticas em
+   assuntos que envolvam graficos e polinomios.
+   Este e um programa CAI onde e possivel a consulta de
+   grafico de qualquer funcao polinomial.
+
+#Como utilizar
+   Quando o programa comecar, ele ira pedir tres tipos de
+   informacao sendo eles:
+   Nivel de zoom - e o nivel de zoom a ser utilizado nos
+   graficos sendo a escala o inverso do valor informado,
+   devendo ser um valor estritamente positivo qualquer.
+   Grau - e o expoente maior da funcao pedida, devendo ser
+   um inteiro positivo qualquer.
+   Coeficientes - sao os coeficientes da funcao, devendo
+   ser colocados do maior grau para o menor grau e sendo
+   eles valores reais quaisquer.
+
+#Ex:
+   Para calcular uma funcao f(x)=x*x-4 (f de x igual a x
+   ao quadrado menos quatro) e escala 0.5
+
+   nivel de zoom: 2
+   grau da equacao: 2
+   coeficientes
+   de x elevado a 2: 1
+   de x elevado a 1: 0
+   de x elevado a 0: -4
+
+   Em seguida o grafico e mostrado e uma tecla e
+   esperada pelo programa.
+
+#Obs:
+   Este treco esta cheio de 'bug'. Entao se ele travar,
+   parar, der erro ou sei la o que mais, ja sabe o que
+   fazer... manda o CTRL+ALT+DEL e mata o processo. =]
